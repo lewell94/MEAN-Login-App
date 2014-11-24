@@ -1,0 +1,16 @@
+.container
+	table.table
+		tr
+			th Founder
+			th Record Label
+			th Scene
+			th Band One
+			th Band Two
+			th Band Three
+		tr(ng-repeat="user in users")
+			td {{user.firstName + ' ' +user.lastName}}
+			td {{user.labelName}}
+			td {{user.labelScene}}
+			td {{user.bandOne}}
+			td {{user.bandTwo}}
+			td {{user.bandThree}}

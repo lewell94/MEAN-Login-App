@@ -1,0 +1,9 @@
+.container(ng-controller="mvMainCtrl")
+	.jumbotron
+		h1 MEAN Login App
+		h2(ng-hide="identity.isAuthenticated()") Click <a href="/signup">here</a> to sign up and create your record label!
+	.row(ng-show="identity.isAuthenticated()")
+		.col-md-12
+			div(ng-include="'/partials/main/text'")
+		.col-md-12
+			p Click <a href="/users">here</a> to check out the other record labels!

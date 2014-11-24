@@ -1,0 +1,31 @@
+.container
+	.well
+		form.form-horizontal(name="profileForm")
+			fieldset
+				legend Manage your Record Label
+					.form-group
+						label.col-md-2.control-label(for="labelname") Label Name
+						.col-md-10
+							input.form-control(name="labelname", type="text", placeholder="Label Name", ng-model="labelname")
+					.form-group
+						label.col-md-2.control-label(for="labelscene") Label Scene
+						.col-md-10
+							input.form-control(name="labelscene", type="text", placeholder="Label Scene", ng-model="labelscene")
+					.form-group
+						label.col-md-2.control-label(for="bandone") Band One
+						.col-md-10
+							input.form-control(name="bandone", type="text", placeholder="Band One", ng-model="bandone")
+					.form-group
+						label.col-md-2.control-label(for="bandtwo") Band Two
+						.col-md-10
+							input.form-control(name="bandtwo", type="text", placeholder="Band Two", ng-model="bandtwo")
+					.form-group
+						label.col-md-2.control-label(for="bandthree") Band Three
+						.col-md-10
+							input.form-control(name="bandthree", type="text", placeholder="Band Three", ng-model="bandthree")
+					.form-group
+						.col-md-10.col-md-offset-2
+							.pull-right
+								button.btn.btn-primary(ng-click="update()", ng-disabled="signupForm.$invalid") Submit
+								&nbsp;
+								a.btn.btn-default(href="/") Cancel

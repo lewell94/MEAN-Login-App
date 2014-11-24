@@ -1,0 +1,22 @@
+body {
+  padding-top: 35px;
+}
+footer p {
+  border-top: 1px solid #d7e0e2;
+  padding-top: 5px;
+}
+.navbar-form .form-group {
+  margin-left: 10px;
+}
+.navbar-form button {
+  margin-left: 10px;
+}
+.toast-top-right {
+  top: 60px;
+}
+.toast-success {
+  background: #222;
+}
+.content {
+  margin-top: 20px;
+}
